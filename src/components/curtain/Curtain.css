@@ -1,0 +1,38 @@
+.curtain{
+    background-color: #f3ddb6;
+    top: -100vh;
+    right: 0vw;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtain-active{
+    background-color: #f3ddb6;
+    top: 0vh;
+    right: 0vw;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact{
+    font-size: 55px;
+    color: #35281e;
+}
+
+@media (max-width: 790px) {
+    .fact{
+        font-size: 22px;
+    }
+}

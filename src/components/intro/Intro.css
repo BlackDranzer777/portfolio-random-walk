@@ -1,0 +1,108 @@
+.intro{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    transition: all 1s ease;
+}
+
+.intro-black{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    /* color: white; */
+    color: #f3ddb6;
+    transition: all 1s ease;
+}
+
+.sketch-container{
+    flex: 1;
+    display: flex;
+}
+
+.sketch{
+    justify-content: center;
+    margin:auto;
+}
+
+
+.info-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.info{
+    padding: 50px;
+    height: 50%;
+    /* background-color: #7f0909; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    /* justify-content: space-between; */
+    /* justify-content: ; */
+    /* justify-items: flex-start; */
+}
+
+.info-name{
+    font-size: 60px;
+    font-weight: 400;
+    /* font-family: 'Abril Fatface', cursive; */
+}
+
+.info-role{
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.info-desc{
+    font-size: 20px;
+    height: 70px;
+    padding-top: 10px;
+}
+
+
+
+@media (max-width: 990px) {
+    .intro{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .intro-black{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .info{
+        margin: auto;
+        margin-bottom: 80px;
+        margin-left: auto;
+        height: auto;
+        /* background-color: #7f0909; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* justify-content: ; */
+        /* justify-items: flex-start; */
+    }
+
+    .info-name{
+        font-size: 50px;
+        font-weight: 400;
+        /* font-family: 'Abril Fatface', cursive; */
+    }
+    
+    .info-role{
+        font-size: 25px;
+        font-weight: 200;
+        padding-top: 10px;
+    }
+
+}

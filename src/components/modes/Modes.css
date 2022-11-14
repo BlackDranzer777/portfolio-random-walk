@@ -1,0 +1,101 @@
+.modes{
+    z-index: 500;
+    position: relative;
+    justify-content: space-between;
+    transition: all 2s ease-in;
+}
+
+.light-dark-mode{
+    top: 22px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.link-home{
+    font-size: 20px;
+    top: 20px;
+    right: 60px;
+    position: fixed;
+    cursor: pointer;
+}
+
+
+
+.link-about{
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    position: fixed;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.link-contact{
+    font-size: 20px;
+    bottom: 20px;
+    left: 20px;
+    position: fixed;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.link-portfolio{
+    font-size: 20px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.link:after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+
+.link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.link.dark:after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f3ddb6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link.dark:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.light{
+    color: black;
+}
+
+.dark{
+    color: #f3ddb6;
+}
+

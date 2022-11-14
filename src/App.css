@@ -1,0 +1,9 @@
+.App{
+  background-color: white;
+  height: 100vh;
+}
+
+.App-dark{
+  background-color: #000;
+  height: 100vh;
+}
